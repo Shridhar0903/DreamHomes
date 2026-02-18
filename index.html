@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- navbar -->
+     <div class="navbar">
+        <div class="logo">
+            <img src="/images/Logo.png" alt="logo" class="imageReveal">
+        </div>
+        <div class="navOptions">
+            <h3 id="home">Home</h3>
+            <h3 id="properties">Properties</h3>
+            <h3 id="about">About Us</h3>
+            <h3 id="project">Projects</h3>
+            <h3 id="contact">Contact</h3>
+        </div>
+        <div class="navButtons">
+            <button class="signIn">Sign In</button>
+        </div>
+        <!-- Mobile menu icon -->
+        <div class="menuIcon" id="menuIcon">
+            ☰
+        </div>
+     </div>
+
+   <!-- Mobile slide menu -->
+   <div class="mobileMenu" id="mobileMenu">
+       <span class="closeBtn" id="closeBtn">✕</span>
+       <a href="#">Home</a>
+       <a href="#">Properties</a>
+       <a href="#">About Us</a>
+       <a href="#">Projects</a>
+       <a href="#">Contact</a>
+
+       <div class="mobileButtons">
+            <button class="signIn">Sign In</button>
+        </div>
+   </div>
+
+   <!-- ========================================================================================================================================== -->
+
+    <!-- HERO SECTION -->
+    <section class="hero autoShow">
+        <div class="heroLeft">
+            <h1>
+                Find Your <span>Dream Home</span><br>
+                With Confidence
+            </h1>
+
+            <p>
+                Explore premium properties with trusted experts.
+                We help you buy, sell, and invest with ease.
+            </p>
+
+            <div class="heroButtons">
+                <button class="primaryBtn">Explore Properties</button>
+                <button class="secondaryBtn">Contact Us</button>
+            </div>
+        </div>
+
+        <div class="heroRight">
+            <img src="/images/House.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- ========================================================================================================================================== -->
+    <!-- Search Bar -->
+
+    <div class="propertySearch">
+        <label>Location</label>
+            <div class="searchField">
+              <input type="text" placeholder="Enter city or area">
+            </div>
+
+         <label>Budget</label>
+         <div class="searchField">
+             <select>
+                 <option>Any</option>
+                 <option>₹10L – ₹30L</option>
+                 <option>₹30L – ₹60L</option>
+                 <option>₹60L – ₹1Cr</option>
+                 <option>₹1Cr+</option>
+             </select>
+         </div>
+
+           <label>Property Type</label>
+             <div class="searchField">
+             <select>
+                 <option>Any</option>
+                 <option>Apartment</option>
+                 <option>Villa</option>
+                 <option>Plot</option>
+                 <option>Commercial</option>
+             </select>
+         </div>
+             <button class="searchBtn">Search</button>
+      </div>
+
+      <!-- ========================================================================================================================================== -->
+
+    <!------------------------------------ Why Choose -------------------------------------------- -->
+    <section class="whyChooseUs autoShow">
+      <h2>Why Choose Us</h2>
+      <p class="subtitle">We make property buying simple, secure, and transparent</p>
+
+      <div class="whyCards ">
+        <div class="whyCard autoShow">
+          <i class="fa-solid fa-house-circle-check"></i>
+          <h3>Verified Properties</h3>
+          <p>All listings are verified to ensure authenticity and trust.</p>
+        </div>
+
+        <div class="whyCard autoShow">
+          <i class="fa-solid fa-tags"></i>
+          <h3>Best Price</h3>
+          <p>Get the best market price with no hidden charges.</p>
+        </div>
+
+        <div class="whyCard autoShow">
+          <i class="fa-solid fa-user-tie"></i>
+          <h3>Expert Agents</h3>
+          <p>Professional agents guide you at every step.</p>
+        </div>
+
+        <div class="whyCard autoShow">
+          <i class="fa-solid fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>We are always available to help you anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROPERTY LISTINGS ================= -->
+
+    <section class="propertySection autoShow">
+    <h2>Featured Properties</h2>
+    <p class="subtitle">Explore our handpicked premium listings</p>
+    
+    <div class="propertyWrapper">
+
+        <!-- Left Arrow -->
+        <button class="scrollBtn leftBtn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="propertyGrid">
+        <!-- Card 1 -->
+            <div class="propertyCard autoShow">
+                <div class="propertyImage">
+                    <img src="/images/House.png" alt="property">
+                    <span class="propertyTag">For Sale</span>
+                </div>
+
+                <div class="propertyContent">
+                    <h3>Luxury Family Villa</h3>
+                    <p class="propertyLocation">
+                        <i class="fa-solid fa-location-dot"></i> Mumbai, India
+                    </p>
+
+                    <div class="propertyDetails">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 2500 sqft</span>
+                    </div>
+
+                    <div class="propertyFooter">
+                        <h4>₹1.2 Cr</h4>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="propertyCard autoShow">
+                <div class="propertyImage">
+                    <img src="/images/House.png" alt="property">
+                    <span class="propertyTag">For Sale</span>
+                </div>
+
+                <div class="propertyContent">
+                    <h3>Luxury Family Villa</h3>
+                    <p class="propertyLocation">
+                        <i class="fa-solid fa-location-dot"></i> Mumbai, India
+                    </p>
+
+                    <div class="propertyDetails">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 2500 sqft</span>
+                    </div>
+
+                    <div class="propertyFooter">
+                        <h4>₹1.2 Cr</h4>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="propertyCard autoShow">
+                <div class="propertyImage">
+                    <img src="/images/House.png" alt="property">
+                    <span class="propertyTag">For Sale</span>
+                </div>
+
+                <div class="propertyContent">
+                    <h3>Luxury Family Villa</h3>
+                    <p class="propertyLocation">
+                        <i class="fa-solid fa-location-dot"></i> Mumbai, India
+                    </p>
+
+                    <div class="propertyDetails">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 2500 sqft</span>
+                    </div>
+
+                    <div class="propertyFooter">
+                        <h4>₹1.2 Cr</h4>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="propertyCard autoShow">
+                <div class="propertyImage">
+                    <img src="/images/House.png" alt="property">
+                    <span class="propertyTag">For Sale</span>
+                </div>
+
+                <div class="propertyContent">
+                    <h3>Luxury Family Villa</h3>
+                    <p class="propertyLocation">
+                        <i class="fa-solid fa-location-dot"></i> Mumbai, India
+                    </p>
+
+                    <div class="propertyDetails">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 2500 sqft</span>
+                    </div>
+
+                    <div class="propertyFooter">
+                        <h4>₹1.2 Cr</h4>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="propertyCard autoShow">
+                <div class="propertyImage">
+                    <img src="/images/House.png" alt="property">
+                    <span class="propertyTag">For Sale</span>
+                </div>
+
+                <div class="propertyContent">
+                    <h3>Luxury Family Villa</h3>
+                    <p class="propertyLocation">
+                        <i class="fa-solid fa-location-dot"></i> Mumbai, India
+                    </p>
+
+                    <div class="propertyDetails">
+                        <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                        <span><i class="fa-solid fa-ruler-combined"></i> 2500 sqft</span>
+                    </div>
+
+                    <div class="propertyFooter">
+                        <h4>₹1.2 Cr</h4>
+                        <button class="viewBtn">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        <button class="scrollBtn rightBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+<!--==============================testimonials=================================================-->
+
+<section class="testimonials">
+    <div class="sectionHeader">
+        <h2>What Our Clients Say</h2>
+        <p>Real stories from satisfied buyers</p>
+    </div>
+
+    <div class="testimonialGrid">
+
+        <div class="testimonialCard autoShow">
+            <div class="clientInfo">
+                <img src="https://i.pravatar.cc/100?img=1" alt="">
+                <div>
+                    <h4>Rahul Mehta</h4>
+                    <span>Mumbai</span>
+                </div>
+            </div>
+
+            <p class="review">
+                "Amazing experience! The team helped me find my dream villa at the perfect price."
+            </p>
+
+            <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="testimonialCard autoShow">
+            <div class="clientInfo">
+                <img src="https://i.pravatar.cc/100?img=2" alt="">
+                <div>
+                    <h4>Priya Sharma</h4>
+                    <span>Pune</span>
+                </div>
+            </div>
+
+            <p class="review">
+                "Very professional and transparent process. Highly recommended!"
+            </p>
+
+            <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="testimonialCard autoShow">
+            <div class="clientInfo">
+                <img src="https://i.pravatar.cc/100?img=3" alt="">
+                <div>
+                    <h4>Arjun Patil</h4>
+                    <span>Bangalore</span>
+                </div>
+            </div>
+
+            <p class="review">
+                "Smooth transaction and excellent support from start to finish."
+            </p>
+
+            <div class="stars">★★★★★</div>
+        </div>
+
+    </div>
+</section>
+<!-- =========================statsSection======================================= -->
+<section class="statsSection">
+    <div class="statsContainer">
+
+        <div class="statCard autoShow">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Properties Sold</p>
+        </div>
+
+        <div class="statCard autoShow">
+            <h2 class="counter" data-target="1200">0</h2>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="statCard autoShow">
+            <h2 class="counter" data-target="15">0</h2>
+            <p>Years Experience</p>
+        </div>
+
+        <div class="statCard autoShow">
+            <h2 class="counter" data-target="98">0</h2>
+            <p>Customer Satisfaction %</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="mapSection">
+    <div class="mapContainer">
+
+        <div class="mapInfo autoShow">
+            <h2>Visit Our Office</h2>
+            <p>123 Dream Homes Street,<br>Mumbai, India</p>
+
+            <div class="contactItem">
+                <span>📞</span> +91 98765 43210
+            </div>
+
+            <div class="contactItem">
+                <span>✉️</span> info@dreamhomes.com
+            </div>
+
+            <div class="contactItem">
+                <span>⏰</span> Mon - Sat : 9AM - 7PM
+            </div>
+        </div>
+
+        <div class="mapWrapper autoShow">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.026462204887!2d72.87765507466788!3d19.076090182124387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62f6f8d8a65%3A0x7b92c1e099f3996!2sMumbai!5e0!3m2!1sen!2sin!4v1690000000000"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footerContainer">
+
+        <!-- Column 1 -->
+        <div class="footerCol">
+            <h2 class="footerLogo">DreamHomes</h2>
+            <p>
+                We provide premium properties with trusted service and
+                complete transparency. Your dream home is just one step away.
+            </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footerCol">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footerCol">
+            <h3>Properties</h3>
+            <ul>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Villas</a></li>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">Luxury Homes</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footerCol">
+            <h3>Contact Us</h3>
+            <p>📍 Mumbai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ info@dreamhomes.com</p>
+
+            <div class="socialIcons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footerBottom">
+        © 2026 DreamHomes. All Rights Reserved.
+    </div>
+</footer>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
