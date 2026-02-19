@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(145deg, #fdf8f2, #f5d099);
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.7);
+    /* background: linear-gradient(145deg, #fdf8f2, #f5d099); */
+
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo img{
+    height:50px;
+}
+
+/* DESKTOP MENU */
+.navOptions{
+    display:flex;
+    gap:40px;
+}
+
+.navOptions h3{
+    cursor:pointer;
+    position:relative;
+}
+
+.navOptions h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:100%;
+    height:2px;
+    background:#8b6b3f;
+    transform:scaleX(0);
+    transition:.3s;
+}
+.navOptions h3:hover{
+    color: #8b6b3f;}
+    
+
+.navOptions h3:hover::after{
+    transform:scaleX(1);}
+    
+
+/* BUTTON */
+.signIn{
+    padding:10px 24px;
+    border-radius:30px;
+      border:2px solid #8b6b3f;
+    background:transparent;
+    color:#8b6b3f;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signIn:hover{
+    background:#8b6b3f;
+    color:#fff;
+}
+
+/* MOBILE ICON */
+.menuIcon{
+    font-size:28px;
+    display:none;
+    cursor:pointer;
+}
+
+/* MOBILE MENU */
+.mobileMenu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:75%;
+    max-width:320px;
+    height:100vh;
+    background:#111;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    transition:.4s;
+    z-index:999;
+}
+
+.mobileMenu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.mobileButtons{
+    border-color:#fff;
+    color:#fff;
+}
+
+.closeBtn{
+    color:#fffffff6;
+    font-size:8vw;
+    margin-right: 15vw;
+    margin-top: 10vw;
+    z-index:5000;
+    align-self:flex-end;
+    cursor:pointer;
+}
+
+.mobileMenu.active{
+    right:0;
+}
+
+/* ================= HERO ================= */
+
+.aboutHero{
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.aboutHero h1{
+    font-size: 48px;
+}
+
+.aboutHero p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+/* ================= COMPANY ================= */
+
+.aboutContainer,
+.visionContainer,
+.missionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 8%;
+}
+.aboutImage img,
+.visionImage img,
+.missionImage img{
+    width: 100%;
+    max-width: 480px;          /* keeps images from becoming too large */
+    height: 320px;             /* equal & shorter height */
+    object-fit: cover;         /* crops nicely, no stretch */
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* subtle hover (professional) */
+.aboutImage img:hover,
+.visionImage img:hover,
+.missionImage img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+}
+.aboutText h2,
+.visionText h2,
+.missionText h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.aboutText p,
+.visionText p{
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ================= MISSION LIST ================= */
+
+.missionText ul{
+    list-style: none;
+}
+
+.missionText li{
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ================= WHY SECTION ================= */
+
+.whySection{
+    padding: 100px 8%;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.whySection h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.whyGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.whyCard{
+    background: white;
+    padding: 40px 25px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.whyCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(230, 189, 4, 0.577);
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background: #111;
+    color: #ccc;
+    padding: 80px 8% 30px;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footerCol h2,
+.footerCol h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footerLogo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footerCol p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footerCol ul{
+    list-style: none;
+}
+
+.footerCol ul li{
+    margin-bottom: 10px;
+}
+
+.footerCol ul li a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footerCol ul li a:hover{
+    color: #c59d5f;
+    padding-left: 5px;
+}
+
+.socialIcons{
+    margin-top: 15px;
+}
+
+.socialIcons a{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ccc;
+    transition: 0.3s ease;
+}
+
+.socialIcons a:hover{
+    color: #c59d5f;
+    transform: translateY(-5px);
+}
+
+/* Bottom Bar */
+.footerBottom{
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #777;
+}
+
+/* ================= SCROLL ANIMATION BASE ================= */
+
+/* Hidden state (before scroll) */
+.reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.4s ease;
+}
+
+/* Slide from left */
+.reveal-left{
+    transform: translateX(-90px);
+}
+
+/* Slide from right */
+.reveal-right{
+    transform: translateX(90px);
+}
+
+/* Active state (when visible) */
+.reveal.active{
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+@media(max-width:600px){
+
+   .mobileMenu{
+            /* background: linear-gradient(145deg, #fdf8f2, #f5d099); */
+            background: black;
+            color:white;
+    }
+
+    .navOptions,
+    .navButtons{
+        display:none;
+        background:transparent;
+        color:#ffffff;
+        cursor:pointer;  
+       
+    }
+    .signIn:hover{
+    background:#8b6b3f;
+    color:#fff;
+    }
+
+    .mobileMenu a{
+    color:#ffffff;
+    font-size: larger;
+    font-weight:600 ;
+    }
+    .closeBtn{
+        color: #fff;
+    }
+    .signIn{
+        color: #ffffff;
+        width: 80%;
+        background-color: transparent;
+        border-color: 1px solid white;
+    }
+
+    .menuIcon{
+        display:block;
+    }
+
+
+    /* Hero */
+    .aboutHero{
+        height: 50vh;
+        padding: 0 20px;
+    }
+
+    .aboutHero h1{
+        font-size: 36px;
+    }
+
+    .aboutHero p{
+        font-size: 16px;
+    }
+
+    /* Sections stack vertically */
+    .aboutContainer,
+    .visionContainer,
+    .missionContainer{
+        grid-template-columns: 1fr;
+        padding: 70px 6%;
+        text-align: center;
+    }
+
+    /* Image size reduced */
+    .aboutImage img,
+    .visionImage img,
+    .missionImage img{
+        height: 260px;
+        max-width: 100%;
+    }
+
+    /* Text centered */
+    .aboutText,
+    .visionText,
+    .missionText{
+        margin: auto;
+    }
+
+    .aboutText h2,
+    .visionText h2,
+    .missionText h2{
+        font-size: 32px;
+    }
+
+    .aboutText p,
+    .visionText p,
+    .missionText li{
+        font-size: 17px;
+    }
+
+    /* Why cards */
+    .whyGrid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer spacing */
+    .footer{
+        padding: 60px 6% 20px;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="properties.css">
+</head>
+<body>
+    <!-- navbar -->
+     <div class="navbar">
+        <div class="logo">
+            <img src="/images/Logo.png" alt="logo" class="imageReveal">
+        </div>
+        <div class="navOptions">
+            <h3 onclick="location.href='index.html'"  id="home">Home</h3>
+            <h3 onclick="location.href='properties.html'" id="properties">Properties</h3>
+            <h3 onclick="location.href='about.html'" id="about">About Us</h3>
+            <h3 onclick="location.href='project.html'" id="project">Projects</h3>
+            <h3 onclick="location.href='contact.html'" id="contact">Contact</h3>
+        </div>
+        <div class="navButtons">
+            <button class="signIn">Sign In</button>
+        </div>
+        <!-- Mobile menu icon -->
+        <div class="menuIcon" id="menuIcon">
+            ☰
+        </div>
+     </div>
+
+   <!-- Mobile slide menu -->
+   <div class="mobileMenu" id="mobileMenu">
+       <span class="closeBtn" id="closeBtn">✕</span>
+       <a onclick="location.href='index.html'">Home</a>
+       <a onclick="location.href='properties.html'">Properties</a>
+       <a onclick="location.href='about.html'">About Us</a>
+       <a onclick="location.href='project.html'">Projects</a>
+       <a onclick="location.href='contact.html'">Contact</a>
+
+       <div class="mobileButtons">
+            <button class="signIn">Sign In</button>
+        </div>
+   </div>
+
+   <!-- HERO -->
+<section class="propertiesHero">
+    <div class="propertiesHeroContent">
+        <h1 class="autoShow">Explore Our Premium Properties</h1>
+        <p class="autoShow">Find your dream home with the best locations & prices.</p>
+    </div>
+</section>
+
+<!-- FILTER BAR -->
+<section class="propertyFilter autoShow">
+    <select>
+        <option>All Locations</option>
+        <option>Mumbai</option>
+        <option>Pune</option>
+        <option>Delhi</option>
+    </select>
+
+    <select>
+        <option>Property Type</option>
+        <option>Apartment</option>
+        <option>Villa</option>
+        <option>Commercial</option>
+    </select>
+
+    <select>
+        <option>Price Range</option>
+        <option>₹20L - ₹50L</option>
+        <option>₹50L - ₹1Cr</option>
+        <option>₹1Cr+</option>
+    </select>
+
+    <button class="filterBtn">Search</button>
+</section>
+
+<!-- PROPERTY GRID -->
+<section class="propertiesPage">
+    <div class="propertiesGrid">
+
+        <!-- CARD 1 -->
+        <div class="propertyPageCard autoShow">
+            <div class="propertyImage">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+                <span class="propertyTag">For Sale</span>
+            </div>
+            <div class="propertyContent">
+                <h3>Luxury Villa</h3>
+                <p class="propertyLocation">Mumbai, India</p>
+                <div class="propertyDetails">
+                    <span>3 Beds</span>
+                    <span>2 Baths</span>
+                    <span>1800 sqft</span>
+                </div>
+                <div class="propertyFooter">
+                    <h4>₹85,00,000</h4>
+                    <button class="viewBtn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="propertyPageCard autoShow">
+            <div class="propertyImage">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="">
+                <span class="propertyTag">For Rent</span>
+            </div>
+            <div class="propertyContent">
+                <h3>Modern Apartment</h3>
+                <p class="propertyLocation">Pune, India</p>
+                <div class="propertyDetails">
+                    <span>2 Beds</span>
+                    <span>1 Bath</span>
+                    <span>1200 sqft</span>
+                </div>
+                <div class="propertyFooter">
+                    <h4>₹25,000/month</h4>
+                    <button class="viewBtn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="propertyPageCard autoShow">
+            <div class="propertyImage">
+                <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="">
+                <span class="propertyTag">Featured</span>
+            </div>
+            <div class="propertyContent">
+                <h3>Premium Flat</h3>
+                <p class="propertyLocation">Delhi, India</p>
+                <div class="propertyDetails">
+                    <span>4 Beds</span>
+                    <span>3 Baths</span>
+                    <span>2400 sqft</span>
+                </div>
+                <div class="propertyFooter">
+                    <h4>₹1,25,00,000</h4>
+                    <button class="viewBtn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+   <footer class="footer">
+    <div class="footerContainer">
+
+        <!-- Column 1 -->
+        <div class="footerCol">
+            <h2 class="footerLogo">DreamHomes</h2>
+            <p>
+                We provide premium properties with trusted service and
+                complete transparency. Your dream home is just one step away.
+            </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footerCol">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footerCol">
+            <h3>Properties</h3>
+            <ul>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Villas</a></li>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">Luxury Homes</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footerCol">
+            <h3>Contact Us</h3>
+            <p>📍 Mumbai, India</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ info@dreamhomes.com</p>
+
+            <div class="socialIcons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🐦</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footerBottom">
+        © 2026 DreamHomes. All Rights Reserved.
+    </div>
+</footer>
+
+<script>
+const autoShowElements = document.querySelectorAll(".autoShow");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }else{
+            entry.target.classList.remove("show")
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+autoShowElements.forEach(el => observer.observe(el));</script>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

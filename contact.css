@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(145deg, #fdf8f2, #f5d099);
+}
+
+/* NAVBAR */
+.navbar{
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.7);
+    /* background: linear-gradient(145deg, #fdf8f2, #f5d099); */
+
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+.logo img{
+    height:50px;
+}
+
+/* DESKTOP MENU */
+.navOptions{
+    display:flex;
+    gap:40px;
+}
+
+.navOptions h3{
+    cursor:pointer;
+    position:relative;
+}
+
+.navOptions h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:100%;
+    height:2px;
+    background:#8b6b3f;
+    transform:scaleX(0);
+    transition:.3s;
+}
+.navOptions h3:hover{
+    color: #8b6b3f;}
+    
+
+.navOptions h3:hover::after{
+    transform:scaleX(1);}
+    
+
+/* BUTTON */
+.signIn{
+    padding:10px 24px;
+    border-radius:30px;
+      border:2px solid #8b6b3f;
+    background:transparent;
+    color:#8b6b3f;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signIn:hover{
+    background:#8b6b3f;
+    color:#fff;
+}
+
+/* MOBILE ICON */
+.menuIcon{
+    font-size:28px;
+    display:none;
+    cursor:pointer;
+}
+
+/* MOBILE MENU */
+.mobileMenu{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:260px;
+    height:100vh;
+    background:#111;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    transition:.4s;
+    z-index:999;
+}
+
+.mobileMenu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.mobileButtons{
+    border-color:#fff;
+    color:#fff;
+}
+
+.closeBtn{
+    color:#010000f6;
+    font-size:8vw;
+    margin-top: 10vw;
+    z-index:5000;
+    align-self:flex-end;
+    cursor:pointer;
+}
+
+.mobileMenu.active{
+    right:0;
+}
+
+/*================================ hero ====================================*/
+.contactHero{
+    height:50vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+
+.contactHero h1{
+    font-size:48px;
+}
+
+.contactHero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* ================= INFO SECTION ================= */
+
+.contactInfoSection{
+    padding:80px 8%;
+}
+
+.contactInfoContainer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.infoCard{
+    background:#fff;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.infoCard:hover{
+    transform:translateY(-10px);
+}
+
+.infoCard span{
+    font-size:35px;
+}
+
+.infoCard h3{
+    margin:15px 0 10px;
+}
+
+/* ================= FORM SECTION ================= */
+
+.contactFormSection{
+    padding:80px 8%;
+}
+
+.formContainer{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:60px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+}
+
+.formContainer h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.inputGroup{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.inputGroup input,
+.inputGroup textarea{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-bottom:2px solid #ccc;
+    outline:none;
+}
+
+.inputGroup label{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    transition:.3s;
+    color:#999;
+}
+
+.inputGroup textarea + label{
+    top:20px;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:valid + label,
+.inputGroup textarea:focus + label,
+.inputGroup textarea:valid + label{
+    top:-10px;
+    font-size:12px;
+    color:#8b6b3f;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#8b6b3f;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background: #111;
+    color: #ccc;
+    padding: 80px 8% 30px;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footerCol h2,
+.footerCol h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footerLogo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footerCol p{
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footerCol ul{
+    list-style: none;
+}
+
+.footerCol ul li{
+    margin-bottom: 10px;
+}
+
+.footerCol ul li a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footerCol ul li a:hover{
+    color: #c59d5f;
+    padding-left: 5px;
+}
+
+.socialIcons{
+    margin-top: 15px;
+}
+
+.socialIcons a{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ccc;
+    transition: 0.3s ease;
+}
+
+.socialIcons a:hover{
+    color: #c59d5f;
+    transform: translateY(-5px);
+}
+
+/* Bottom Bar */
+.footerBottom{
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    color: #777;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+
+.scroll,
+.scroll-left,
+.scroll-right{
+    opacity:0;
+    transition:all .8s ease;
+}
+
+.scroll{ transform:translateY(40px); }
+.scroll-left{ transform:translateX(-40px); }
+.scroll-right{ transform:translateX(40px); }
+
+.show{
+    opacity:1;
+    transform:translate(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:600px){
+    .mobileMenu{
+            /* background: linear-gradient(145deg, #fdf8f2, #f5d099); */
+            background: black;
+            color:white;
+    }
+
+    .navOptions,
+    .navButtons{
+        display:none;
+        background:transparent;
+        color:#ffffff;
+        cursor:pointer;  
+       
+    }
+    .signIn:hover{
+    background:#8b6b3f;
+    color:#fff;
+    }
+
+    .mobileMenu a{
+    color:#ffffff;
+    font-size: larger;
+    font-weight:600 ;
+    }
+    .closeBtn{
+        color: #fff;
+    }
+    .signIn{
+        color: #ffffff;
+        background-color: transparent;
+        border-color: 1px solid white;
+    }
+
+    .menuIcon{
+        display:block;
+    }
+
+    .contactHero h1{ font-size:28px; }
+
+    .contactInfoContainer{
+        grid-template-columns:1fr;
+    }
+
+    .formContainer{
+        padding:30px;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 60px 6% 20px;
+        align-items: center;
+    }
+
+}
